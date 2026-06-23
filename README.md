@@ -286,7 +286,7 @@ Polars optimise la préparation tabulaire ; il ne remplace pas le moteur géomé
 
 ## Origine du projet
 
-Le dépôt documente une démarche complète : souvenir d’un projet universitaire de 1991, reconstruction théorique, prototype SciPy, mesure de sa limite quadratique, développement d’un moteur incrémental local puis création d’un pipeline scientifique reproductible.
+Le dépôt documente une démarche complète : projet universitaire personnel de 1991 (2eme année Deug A université Sophia-Antipolis), reconstruction théorique, prototype SciPy, mesure de sa limite quadratique, développement d’un moteur incrémental local puis création d’un pipeline scientifique reproductible.
 
 ## Licence
 
