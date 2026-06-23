@@ -275,6 +275,7 @@ Polars optimise la préparation tabulaire ; il ne remplace pas le moteur géomé
 - [`ROADMAP.md`](ROADMAP.md) — évolutions possibles ;
 - [`docs/PUBLICATION_GITHUB.md`](docs/PUBLICATION_GITHUB.md) — publication du dépôt ;
 - [`CHANGELOG.md`](CHANGELOG.md) — historique des versions.
+- [`AUDIT_SECURITE_V5.md`](AUDIT_SECURITE_V5.md) — audit de sécurité de l'nsemble du code réalisé par ChatGPT 5.5 version avancée.
 
 ## Limites
 
