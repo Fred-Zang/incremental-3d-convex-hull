@@ -1,0 +1,79 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "v5 — traiter le fichier Excel exemple",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "console": "integratedTerminal",
+      "args": [
+        "process",
+        "--input",
+        "data/imports/points_exemple.xlsx",
+        "--sheet",
+        "Points",
+        "--engine",
+        "historical",
+        "--record-every",
+        "50",
+        "--progress-every",
+        "100",
+        "--show"
+      ]
+    },
+    {
+      "name": "v5 — générer 10 000 points Excel",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "console": "integratedTerminal",
+      "args": [
+        "generate-file",
+        "--points",
+        "10000",
+        "--distribution",
+        "volume",
+        "--seed",
+        "42",
+        "--output",
+        "data/imports/test_10000.xlsx"
+      ]
+    },
+    {
+      "name": "v4 — animation historique lente",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "console": "integratedTerminal",
+      "args": [
+        "demo",
+        "--engine",
+        "historical",
+        "--delay",
+        "0.80"
+      ]
+    },
+    {
+      "name": "v4 — benchmark comparatif",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "console": "integratedTerminal",
+      "args": [
+        "benchmark",
+        "--sizes",
+        "1000",
+        "1500",
+        "2000",
+        "--distributions",
+        "sphere",
+        "--engines",
+        "scipy",
+        "historical",
+        "--max-seconds",
+        "300"
+      ]
+    }
+  ]
+}

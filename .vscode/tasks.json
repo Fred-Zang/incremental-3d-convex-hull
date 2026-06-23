@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Créer l'environnement Python v5",
+      "type": "shell",
+      "command": "python3 -m venv .venv && .venv/bin/python -m pip install --upgrade pip && .venv/bin/python -m pip install -r requirements.txt",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lancer les 15 tests v5",
+      "type": "shell",
+      "command": ".venv/bin/python -m pytest",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Traiter l'Excel exemple v5",
+      "type": "shell",
+      "command": ".venv/bin/python app.py process --input data/imports/points_exemple.xlsx --sheet Points --record-every 50 --progress-every 100 --show",
+      "problemMatcher": []
+    },
+    {
+      "label": "Générer 10 000 points Excel",
+      "type": "shell",
+      "command": ".venv/bin/python app.py generate-file --points 10000 --distribution volume --seed 42 --output data/imports/test_10000.xlsx",
+      "problemMatcher": []
+    }
+  ]
+}

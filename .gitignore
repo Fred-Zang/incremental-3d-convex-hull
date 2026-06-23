@@ -1,0 +1,42 @@
+# Environnements et caches Python
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.py[cod]
+*$py.class
+
+# Outils et éditeurs
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Bases DuckDB et fichiers temporaires
+*.duckdb
+*.duckdb.wal
+*.wal
+
+# Exécutions et exports générés
+data/runs/*
+!data/runs/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+
+# Fichiers de benchmark générés
+data/benchmarks/*.csv
+data/benchmarks/*.json
+
+# Fichiers locaux de test non destinés au dépôt
+data/imports/test_*
+data/imports/sphere_*
+data/imports/cube_*
+
+# Rapports de couverture et paquets
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/

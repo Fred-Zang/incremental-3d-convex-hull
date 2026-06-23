@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Si ce projet est utilisé dans un travail, merci de le citer."
+title: "Enveloppe convexe 3D incrémentale"
+type: software
+authors:
+  - family-names: "Zanghi"
+    given-names: "Fred"
+version: "5.0.0"
+date-released: "2026-06-22"
+license: MIT
+abstract: >-
+  Pipeline Python reproductible pour construire une enveloppe convexe 3D
+  incrémentale à partir de fichiers Excel, CSV ou Parquet, avec stockage
+  DuckDB, validation SciPy/Qhull, exports scientifiques et visualisation PyVista.
+keywords:
+  - computational geometry
+  - convex hull
+  - point cloud
+  - Python
+  - DuckDB
+  - PyVista

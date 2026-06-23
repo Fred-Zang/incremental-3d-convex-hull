@@ -1,0 +1,32 @@
+[project]
+name = "incremental-3d-convex-hull"
+version = "5.0.0"
+description = "Pipeline scientifique pour enveloppe convexe 3D incrémentale."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Fred Zanghi"}
+]
+keywords = [
+  "computational geometry",
+  "convex hull",
+  "point cloud",
+  "duckdb",
+  "pyvista"
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["data/runs", "examples/sample_run"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

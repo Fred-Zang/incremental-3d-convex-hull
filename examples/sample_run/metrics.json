@@ -1,0 +1,22 @@
+{
+  "run_id": "20260622_162611_points_exemple_125e87",
+  "engine": "historical",
+  "source_file": "data/imports/points_exemple.xlsx",
+  "started_at_utc": "2026-06-22T16:26:11.435239+00:00",
+  "finished_at_utc": "2026-06-22T16:26:12.113880+00:00",
+  "source_rows": 250,
+  "valid_points": 250,
+  "rejected_points": 0,
+  "points_processed": 250,
+  "hull_vertices": 63,
+  "hull_edges": 183,
+  "hull_faces": 122,
+  "surface_area": 10.798411860295756,
+  "volume": 3.1957535462029583,
+  "hull_seconds": 0.08713224099983563,
+  "total_seconds": 0.6786422949999178,
+  "points_per_second": 2869.2019983793552,
+  "peak_memory_mb": 1010.71875,
+  "reference_scipy_executed": true,
+  "full_convexity_executed": true
+}

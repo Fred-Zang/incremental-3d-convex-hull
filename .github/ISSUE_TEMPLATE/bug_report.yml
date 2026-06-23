@@ -1,0 +1,32 @@
+name: Signaler un bug
+description: Décrire un comportement incorrect ou une erreur reproductible.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Que se passe-t-il et quel résultat était attendu ?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Étapes de reproduction
+      description: Commande, fichier source, distribution et taille du jeu de données.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement
+      description: Distribution Linux, version Python, versions des dépendances.
+      placeholder: "Python 3.12, Ubuntu 24.04, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Journaux ou trace d’erreur
+      render: shell

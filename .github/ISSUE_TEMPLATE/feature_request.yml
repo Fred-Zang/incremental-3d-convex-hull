@@ -1,0 +1,24 @@
+name: Proposer une évolution
+description: Suggérer une fonctionnalité, un format ou une amélioration algorithmique.
+title: "[Évolution] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Besoin
+      description: Quel problème scientifique ou technique cette évolution résout-elle ?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposition
+      description: Décrire la solution envisagée et son impact sur le pipeline.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation attendue
+      description: Quels tests, métriques ou comparaisons permettraient de valider cette évolution ?
